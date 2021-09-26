@@ -31,9 +31,8 @@ echo "plugins=(git docker docker-compose)" >> $HOME/.zshrc
 echo "Configurando Docker"
 sudo usermod -aG docker $USER
 
-echo "Configurando ambiente Driva"
+echo "Configurando Github"
 export DRIVAHOME=$HOME/driva
-rm -rf $DRIVAHOME
 mkdir $DRIVAHOME
 
 wget https://github.com/cli/cli/releases/download/v2.0.0/gh_2.0.0_linux_amd64.deb
@@ -41,9 +40,6 @@ sudo apt install ./gh_2.0.0_linux_amd64.deb
 rm gh_2.0.0_linux_amd64.deb
 
 gh auth login
-
-gh repo clone Driva-tecnologia/Backend-Driva $DRIVAHOME/Backend
-gh repo clone Driva-tecnologia/App-Driva $DRIVAHOME/Frontend
 
 echo "Configurando desenvolvimento Node"
 export NVM_DIR=''

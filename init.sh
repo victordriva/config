@@ -26,11 +26,6 @@ echo "source $ZSHPLUGINS/zsh-autosuggestions/zsh-autosuggestions.zsh" >> $HOME/.
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSHPLUGINS/zsh-syntax-highlighting
 echo "source $ZSHPLUGINS/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> $HOME/.zshrc
 
-echo "plugins=(git docker docker-compose)" >> $HOME/.zshrc
-
-echo "Configurando Docker"
-sudo usermod -aG docker $USER
-
 echo "Configurando Github"
 export DRIVAHOME=$HOME/driva
 echo "export DRIVAHOME=$HOME/driva" >> $HOME/.zshrc

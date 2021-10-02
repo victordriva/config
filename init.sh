@@ -33,6 +33,7 @@ sudo usermod -aG docker $USER
 
 echo "Configurando Github"
 export DRIVAHOME=$HOME/driva
+echo "export DRIVAHOME=$HOME/driva" >> $HOME/.zshrc
 mkdir $DRIVAHOME
 
 wget https://github.com/cli/cli/releases/download/v2.0.0/gh_2.0.0_linux_amd64.deb

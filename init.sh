@@ -61,6 +61,9 @@ sudo apt-get install -y make build-essential libssl-dev zlib1g-dev \
 libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm \
 libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
 
+sudo apt install -y python3-venv
+
+echo "Instalando Pyenv"
 rm -rf $HOME/.pyenv
 
 curl https://pyenv.run | bash
@@ -69,7 +72,10 @@ echo 'export PATH="$HOME/.pyenv/bin:$PATH"' >> $HOME/.zshrc
 echo 'eval "$(pyenv init --path)"' >> $HOME/.zshrc
 echo 'eval "$(pyenv virtualenv-init -)"' >> $HOME/.zshrc
 
+echo "Instalando Poetry"
+curl -sSL https://install.python-poetry.org | python3 -
 
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> $HOME/.zshrc
 
 
 echo "FINALIZADO"

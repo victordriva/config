@@ -26,10 +26,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSHPLUGINS/z
 echo "source $ZSHPLUGINS/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> $HOME/.zshrc
 
 echo "Configurando Github"
-export DRIVAHOME=$HOME/driva
-echo "export DRIVAHOME=$HOME/driva" >> $HOME/.zshrc
-mkdir $DRIVAHOME
-
 wget https://github.com/cli/cli/releases/download/v2.5.0/gh_2.5.0_linux_amd64.deb
 sudo apt install ./gh_2.5.0_linux_amd64.deb
 rm gh_2.5.0_linux_amd64.deb

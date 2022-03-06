@@ -19,9 +19,6 @@ echo "Configurando Plugins ZSH"
 rm -rf $ZSHPLUGINS
 mkdir $ZSHPLUGINS
 
-git clone https://github.com/supercrabtree/k.git $ZSHPLUGINS/k
-echo "source $ZSHPLUGINS/k/k.sh" >> $HOME/.zshrc
-
 git clone https://github.com/zsh-users/zsh-autosuggestions $ZSHPLUGINS/zsh-autosuggestions
 echo "source $ZSHPLUGINS/zsh-autosuggestions/zsh-autosuggestions.zsh" >> $HOME/.zshrc
 

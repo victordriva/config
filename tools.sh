@@ -1,4 +1,6 @@
 #! /bin/sh
+FISH_FOLDER="${HOME}/.config/fish"
+FISH_CONFIG="${FISH_FOLDER}/config.fish"
 
 asdf plugin add nodejs
 asdf install nodejs latest
@@ -40,3 +42,14 @@ rm ./nvim-linux64.deb
 
 cargo install exa bat ytop
 asdf reshim
+
+wget https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh
+sudo chmod +x install.sh
+./install.sh -y
+rm ./install.sh
+asdf reshim
+
+PATH_CMD="contains $HOME/.local/bin $fish_user_paths; or set -Ua fish_user_paths $HOME/.local/bin"
+grep -qxF '$PATH_CMD' $FISH_CONFIG || echo $PATH_CMD >> $FISH_CONFIG
+
+echo Feche o terminal e abra novamente

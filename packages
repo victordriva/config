@@ -1,18 +1,28 @@
-discord-ptb
-brave
-insomnia
-flameshot
-virtualization packages
-beekeeper_studio
-nerd fonts
-lunarvim
-libreoffice
 alacritty
-picom
-bottom
-htop
-yay
-feh
+bspwm
 zsh + omz
-archlinux-logout
+feh
 rofi
+rofi-power-menu
+picom
+nerd-fonts-complete
+
+virtualization packages
+libreoffice-still
+xclip
+flameshot
+htop
+
+yay
+discord-ptb
+brave-bin
+insomnia
+beekeeper-studio-bin
+
+nvm
+rustup
+pip
+lunarvim
+
+
+

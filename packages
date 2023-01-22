@@ -8,7 +8,17 @@ picom
 nerd-fonts-complete
 dunst
 
-virtualization packages
+libvirt
+qemu-base
+virt-viewer
+virt-manager
+iptables-nft
+dnsmasq
+dmidecode
+bridge-utils
+openbsd-netcat
+
+
 libreoffice-still
 xclip
 flameshot

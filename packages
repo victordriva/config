@@ -6,6 +6,7 @@ rofi
 rofi-power-menu
 picom
 nerd-fonts-complete
+dunst
 
 virtualization packages
 libreoffice-still

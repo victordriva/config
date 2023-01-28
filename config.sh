@@ -9,12 +9,14 @@ sudo pacman -Syyuu
 echo "Instaling basic tools"
 sudo pacman -S xorg xorg-xinit xmonad xmonad-contrib feh rofi zsh alacritty picom dunst htop flameshot xclip
 
-mkdir -p ~/.config/{alacritty, rofi} .xmonad wallpapers
+mkdir -p ~/.config/{alacritty, rofi}
+mkdir .xmonad
+mkdir wallpapers
 
 cp files/alacritty.yml ~/.config/alacritty/
 cp files/config.rasi ~/.config/rofi/
 cp files/xmonad.hs ~/.xmonad/
-cp files/wallpapers/* ~/wallpapers/
+cp wallpapers/* ~/wallpapers/
 cp files/.zshrc ~/.zshrc
 cp files/.p10k.zsh ~/.p10k.zsh
 

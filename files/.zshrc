@@ -8,6 +8,7 @@ fi
 # Created by newuser for 5.9
 
 export PATH=$HOME/.cargo/bin:$PATH
+export EDITOR=vim
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

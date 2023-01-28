@@ -11,6 +11,7 @@ sudo pacman -S xorg xorg-xinit xmonad xmonad-contrib feh rofi zsh alacritty pico
 
 mkdir -p ~/.config/{alacritty, rofi}
 mkdir .xmonad
+mkdir .zsh
 mkdir wallpapers
 
 cp files/alacritty.yml ~/.config/alacritty/
@@ -21,6 +22,10 @@ cp files/.zshrc ~/.zshrc
 cp files/.p10k.zsh ~/.p10k.zsh
 
 sudo chsh -s /bin/zsh victor
+
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc

@@ -12,8 +12,14 @@
 11. feh
 12. picom
 
+# Software to remove
+gnu-free-fonts (breaks bottom graphs)
+
 # Fonts to install
 1. noto-fonts-emoji
 2. ttf-symbola
 3. ttf-meslo-nerd-font-powerlevel10k
 4. ttf-dejavu-nerd
+
+# Rust utils
+cargo install paru bottom exa ripgrep bat

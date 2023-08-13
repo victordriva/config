@@ -6,5 +6,9 @@ scrolling:
 
 font:
   normal:
-    family: Source Code Pro
+    family: "MesloLGS NF"
     style: Regular
+shell:
+  program: /bin/zsh
+  args:
+    - --login

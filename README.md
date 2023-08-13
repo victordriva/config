@@ -1,7 +1,7 @@
 ```shell
 sudo pacman -Syyuu
 
-sudo pacman -Syy feh alacritty picom dunst flameshot dbeaver git neovim libreoffice-still steam lutris
+sudo pacman -Syy feh zsh alacritty picom dunst flameshot dbeaver git neovim libreoffice-still steam lutris
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 cargo install paru bottom bat ripgrep exa

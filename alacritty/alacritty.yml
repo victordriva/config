@@ -1,0 +1,10 @@
+env:
+  TERM: alacritty
+
+scrolling:
+  history: 10000
+
+font:
+  normal:
+    family: Source Code Pro
+    style: Regular
